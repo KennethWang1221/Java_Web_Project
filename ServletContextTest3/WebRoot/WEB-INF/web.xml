@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletContextTest3</display-name>
+  <context-param>
+    <param-name>school</param-name>
+    <param-value>西安文理学院</param-value>
+  </context-param>
+  <context-param>
+    <param-name>address</param-name>
+    <param-value>科技六路</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>ContextTest1</servlet-name>
+    <servlet-class>context.test.ContextTest1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextTest1</servlet-name>
+    <url-pattern>/ContextTest1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContextTest2</servlet-name>
+    <servlet-class>context.test.ContextTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextTest2</servlet-name>
+    <url-pattern>/ContextTest2</url-pattern>
+  </servlet-mapping>
+</web-app>
